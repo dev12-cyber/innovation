@@ -28,7 +28,27 @@
     <link href="css/style.css" rel="stylesheet">
  
 </head>
+<style>
+    .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.card-body {
+    flex-grow: 1;
+}
+
+.card-footer {
+    margin-top: auto;
+}
+.card img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+</style>
 <body>
     <!-- Topbar Start -->
   
@@ -100,7 +120,7 @@
                 <li class="nav-item" style="margin-right: 15px;"><a class="nav-link fw-bold" href="./about.html">About Us</a></li>
                 <li class="nav-item" style="margin-right: 15px;"><a class="nav-link fw-bold" href="./service.html">Our Services</a></li>
                 <li class="nav-item" style="margin-right: 15px;"><a class="nav-link fw-bold" href="./projects.html">Projects</a></li>
-                <li class="nav-item" style="margin-right: 15px;"><a class="nav-link fw-bold" href="./gallery.html">Gallery</a></li>
+               
                 <li class="nav-item"><a class="nav-link fw-bold" href="./contact.html">Contact Us</a></li>
             </ul>
             
@@ -350,122 +370,355 @@
 
 
     <!-- Projects Start -->
-    <div class="container-fluid">
-        <div class="container py-3">
-            <div class="row ">
-                <div class="col-lg-6 col-md-8 col  mb-4">
-                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Gallery</h6>
-                    <h1 class="mb-4 section-title">Some Of Our Awesome Interior Design</h1>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-6 col-md-8 col mb-4">
+                    <h6 class="text-primary text-uppercase mb-3">Our Projects</h6>
+                    <h1 class="mb-4 section-title">Some Of Our Exceptional Designs</h1>
                 </div>
             </div>
-    
-            <div class="row g-3 mx-1 portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2 portfolio-item first">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/Light Axis.png" alt="">
+            
+            <div class="row g-4">
+                <!-- Clients Loop Start -->
+                
+                <!-- Light Axis -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h4 class="mb-0">Light Axis</h4>
                         </div>
-                        <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Light Axis , Okhla, New Delhi
-                            </h4>
-                            <h4 class="text-white mb-4">Area:- 2000 Sft
-                            </h4>  
-
-                            <div class="d-flex align-items-center justify-content-center">
-                               
-                               
-                            </div>
+                        <div class="card-body text-center">
+                            <img class="img-fluid rounded" src="img/Light Axis.png" alt="Light Axis">
+                            <p class="mt-3"><i class="fas fa-map-marker-alt text-primary"></i> Okhla, New Delhi</p>
+                            <p><i class="fas fa-ruler-combined text-primary"></i> 2000 Sft</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#lightAxisModal">
+                                <i class="fas fa-eye"></i> See All Images
+                            </button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2 portfolio-item second">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/XS The place to be.png" alt="">
+                <!-- Tech Edu -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h4 class="mb-0">Tech Edu</h4>
                         </div>
-                        <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">XS The place to be , Guwahati
-                                
+                        <div class="card-body text-center">
+                            <img class="img-fluid rounded" src="img/5thimg.png" alt="Tech Edu">
+                            <p class="mt-3"><i class="fas fa-map-marker-alt text-primary"></i> Okhla, New Delhi</p>
+                            <p><i class="fas fa-ruler-combined text-primary"></i> 4000 Sft</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#techEduModal">
+                                <i class="fas fa-eye"></i> See All Images
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- pacific -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h4 class="mb-0">Pacific 
                             </h4>
-                            <h4 class="text-white mb-4">Area:- 1600 Sft
-                            </h4>  
-                            <div class="d-flex align-items-center justify-content-center">
-                               
-                               
-                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <img class="img-fluid rounded" src="img/6th.png" alt="Tech Edu">
+                            <p class="mt-3"><i class="fas fa-map-marker-alt text-primary"></i> Noida</p>
+                            <p><i class="fas fa-ruler-combined text-primary"></i> 1000 Sft</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#Pacific">
+                                <i class="fas fa-eye"></i> See All Images
+                            </button>
                         </div>
                     </div>
                 </div>
-    
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2 portfolio-item third">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="img/career.png" alt="">
-                        </div>
-                        <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Career Socially, Noida</h4>
-                            <h4 class="text-white mb-4">Area:- 3700 Sft
-                            </h4>  
-                            <div class="d-flex align-items-center justify-content-center">
-                               
+                <!-- Career Socially -->
+                <div class="row ">
+                    <!-- Career Socially -->
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-header bg-primary text-white text-center">
+                                <h4 class="mb-0">Career Socially</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded" src="img/career.png" alt="Career Socially">
+                                <p class="mt-3"><i class="fas fa-map-marker-alt text-primary"></i>Noida</p>
+                                <p><i class="fas fa-ruler-combined text-primary"></i> 3700 Sft</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#careerSociallyModal">
+                                    <i class="fas fa-eye"></i> See All Images
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-    
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2 portfolio-item first">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center" style="height: 300px;">
-                            <img class="img-fluid" src="img/5thimg.png" alt="" style="height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Tech Edu Okhla, New Delhi</h4>
-                            <h4 class="text-white mb-4">Area:- 4000 Sft
-                            </h4> 
-                            <div class="d-flex align-items-center justify-content-center">
-                               
+                
+                    <!-- TATA AIG -->
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-header bg-primary text-white text-center">
+                                <h4 class="mb-0">TATA AIG</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded" src="img/tataaig.png" alt="TATA AIG">
+                                <p class="mt-3"><i class="fas fa-map-marker-alt text-primary"></i>Gurugram</p>
+                                <p><i class="fas fa-ruler-combined text-primary"></i> 8000 Sft</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tataAIGModal">
+                                    <i class="fas fa-eye"></i> See All Images
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-    
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2 portfolio-item second">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center" style="height: 300px;">
-                            <img class="img-fluid" src="img/8th.png" alt="" style="height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4">Buyceps , Mumbai & Bangalore
-                            </h4>
-                            <h4 class="text-white mb-4">Area:- 2000 Sft
-                            </h4> 
-                            <div class="d-flex align-items-center justify-content-center">
-                               
+                
+                    <!-- Buyceps -->
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-header bg-primary text-white text-center">
+                                <h4 class="mb-0">Buyceps</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded" src="img/buyceps.png" alt="Buyceps">
+                                <p class="mt-3"><i class="fas fa-map-marker-alt text-primary"></i>Mumbai & Bangalore</p>
+                                <p><i class="fas fa-ruler-combined text-primary"></i> 2000 Sft</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#buycepsModal">
+                                    <i class="fas fa-eye"></i> See All Images
+                                </button>
                             </div>
                         </div>
                     </div>
+                
+                  
+                    <!-- Satya Hindi News -->
+<div class="col-lg-4 col-md-6 mt-3">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white text-center">
+            <h4 class="mb-0">Satya Hindi News</h4>
+        </div>
+        <div class="card-body text-center">
+            <img class="img-fluid rounded" src="img/satya.png" alt="Satya Hindi News">
+            <p class="mt-3"><i class="fas fa-map-marker-alt text-primary"></i> Noida</p>
+            <p><i class="fas fa-ruler-combined text-primary"></i> 1000 Sft</p>
+        </div>
+        <div class="card-footer text-center">
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#satyaHindiNewsModal">
+                <i class="fas fa-eye"></i> See All Images
+            </button>
+        </div>
+    </div>
+</div>
+
                 </div>
-    
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2 portfolio-item third">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img d-flex align-items-center justify-content-center" style="height: 300px;">
-                            <img class="img-fluid" src="img/6th.png" alt="" style="height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="text-white mb-4"> Pacific , Noida</h4>
-                            <h4 class="text-white mb-4"> Area:- 1000 Sft
-                            </h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
+                
+                <!-- Additional Clients (Pacific, Career Socially, TATA AIG, Buyceps, The Scottish House, XS The Place To Be) -->
+                
             </div>
         </div>
     </div>
+    
+    <!-- Modals for each client -->
+    
+    <div class="modal fade" id="lightAxisModal" tabindex="-1" aria-labelledby="lightAxisModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lightAxisModalLabel">More Images for Light Axis</h5>
+                    <button type="button" class="btn" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid mb-3" src="img/Light Axis1.png" alt="Light Axis Image 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid mb-3" src="img/Light Axis3.png" alt="Light Axis Image 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid mb-3" src="img/light4.png" alt="Light Axis Image 2">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="techEduModal" tabindex="-1" aria-labelledby="techEduModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="techEduModalLabel">More Images for Tech Edu</h5>
+                    <button type="button" class="btn" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid mb-3" src="img/techedu1.png" alt="Tech Edu Image 1">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid mb-3" src="img/techedu2.png" alt="Tech Edu Image 2">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Pacific" tabindex="-1" aria-labelledby="PacificLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >More Images for Pacific</h5>
+                    <button type="button" class="btn" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid mb-3" src="img/Pacific1.png" alt="Tech Edu Image 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid mb-3" src="img/Pacific2.png" alt="Tech Edu Image 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid mb-3" src="img/Pacic4.png" alt="Tech Edu Image 2">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals for each client -->
+<div class="modal fade" id="careerSociallyModal" tabindex="-1" aria-labelledby="careerSociallyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">More Images for Career Socially</h5>
+                <button type="button" class="btn" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/careersocially1.png" alt="Career Socially Image 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/careersociall2.png" alt="Career Socially Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/career1.png" alt="Career Socially Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="tataAIGModal" tabindex="-1" aria-labelledby="tataAIGLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">More Images for TATA AIG</h5>
+                <button type="button" class="btn" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/tataaig1.png" alt="TATA AIG Image 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/tataaig2.png" alt="TATA AIG Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/tata1.png" alt="TATA AIG Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="buycepsModal" tabindex="-1" aria-labelledby="buycepsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">More Images for Buyceps</h5>
+                <button type="button" class="btn" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/buyceps1.png" alt="Buyceps Image 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/buyceps2.png" alt="Buyceps Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/buy123.png" alt="Buyceps Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/buy45.png" alt="Buyceps Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mb-3" src="img/buylast.png" alt="Buyceps Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="satyaHindiNewsModal" tabindex="-1" aria-labelledby="satyaHindiNewsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">More Images for Satya Hindi News</h5>
+                <button type="button" class="btn" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid mb-3" src="img/satya.png" alt="Satya Hindi News Image 1">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid mb-3" src="img/satya.png" alt="Satya Hindi News Image 2">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Projects End -->
 
 
@@ -600,7 +853,7 @@
                     <a class="text-white mb-2" href="./index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
                     <a class="text-white mb-2" href="./about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
                     <a class="text-white mb-2" href="./service.html"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                    <a class="text-white mb-2" href="./gallery.html"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
+                    <a class="text-white mb-2" href="./projects.html"><i class="fa fa-angle-right mr-2"></i>Projects</a>
                     <a class="text-white" href="./contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>
             </div>
@@ -610,7 +863,7 @@
                     <a class="text-white mb-2" href="./index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
                     <a class="text-white mb-2" href="./about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
                     <a class="text-white mb-2" href="./service.html"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                    <a class="text-white mb-2" href="./gallery.html"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
+                    <a class="text-white mb-2" href="./projects.html"><i class="fa fa-angle-right mr-2"></i>Projects</a>
                     <a class="text-white" href="./contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>
             </div>
